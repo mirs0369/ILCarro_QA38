@@ -1,0 +1,1 @@
+10:26:14 INFO  TestBase - RegistrationPositive starts with credentials: login john__1573@gmail.com and password123Ertg!

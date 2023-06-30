@@ -1,0 +1,3 @@
+10:47:32 INFO  TestBase - open registration form invoked
+10:47:33 INFO  TestBase - fill registration form
+10:47:34 INFO  TestBase - RegistrationPositive starts with credentials: login john__2852@gmail.com and password123Ertg!
