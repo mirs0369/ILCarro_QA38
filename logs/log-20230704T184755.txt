@@ -1,0 +1,26 @@
+18:48:01 INFO  manager.WebDriverListener - Start searching Element ------> By.xpath: //*[.=' Logout ']
+18:48:06 INFO  manager.WebDriverListener - Element with locator------> By.xpath: //*[.=' Logout '] was found 
+18:48:06 INFO  manager.TestNgListener - Test registrationNegativePassword invoked 
+18:48:06 INFO  manager.WebDriverListener - Start searching Element ------> By.xpath: //*[.=' Sign up ']
+18:48:06 INFO  manager.WebDriverListener - Element with locator------> By.xpath: //*[.=' Sign up '] was found 
+18:48:07 INFO  manager.WebDriverListener - Start searching Element ------> By.xpath: //input[@id='name']
+18:48:07 INFO  manager.WebDriverListener - Element with locator------> By.xpath: //input[@id='name'] was found 
+18:48:07 INFO  manager.WebDriverListener - Start searching Element ------> By.xpath: //input[@id='lastName']
+18:48:07 INFO  manager.WebDriverListener - Element with locator------> By.xpath: //input[@id='lastName'] was found 
+18:48:07 INFO  manager.WebDriverListener - Start searching Element ------> By.xpath: //input[@id='email']
+18:48:07 INFO  manager.WebDriverListener - Element with locator------> By.xpath: //input[@id='email'] was found 
+18:48:08 INFO  manager.WebDriverListener - Start searching Element ------> By.xpath: //input[@id='password']
+18:48:08 INFO  manager.WebDriverListener - Element with locator------> By.xpath: //input[@id='password'] was found 
+18:48:08 INFO  manager.WebDriverListener - Start searching Element ------> By.cssSelector: div.checkbox-container
+18:48:08 INFO  manager.WebDriverListener - Element with locator------> By.cssSelector: div.checkbox-container was found 
+18:48:08 INFO  manager.WebDriverListener - Start searching Element ------> By.xpath: //button[@type='submit']
+18:48:08 INFO  manager.WebDriverListener - Element with locator------> By.xpath: //button[@type='submit'] was found 
+18:48:09 INFO  manager.TestNgListener - Test registrationNegativePassword successful 
+18:48:09 INFO  manager.WebDriverListener - Start searching Element ------> By.xpath: //button[@type='button']
+18:48:11 INFO  manager.WebDriverListener - Something went wrong... 
+18:48:11 INFO  manager.WebDriverListener - org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//button[@type='button']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MSI', ip: '192.168.1.59', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: driver.version: EventFiringWebDriver
+18:48:11 INFO  manager.TestNgListener - Test registrationPositive invoked 

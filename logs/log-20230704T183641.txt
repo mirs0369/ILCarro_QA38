@@ -1,0 +1,3 @@
+18:36:52 INFO  manager.TestNgListener - Test registrationNegativePassword invoked 
+18:36:54 INFO  manager.TestNgListener - Test registrationNegativePassword successful 
+18:36:59 INFO  manager.TestNgListener - Test registrationPositive invoked 

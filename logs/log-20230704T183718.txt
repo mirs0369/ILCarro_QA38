@@ -1,0 +1,6 @@
+18:37:29 INFO  manager.TestNgListener - Test registrationPositive invoked 
+18:37:29 INFO  TestBase - Open registration form invoked
+18:37:35 INFO  TestBase - Fill registration form invoked
+18:37:35 INFO  TestBase - Submit Login invoked
+18:37:35 INFO  TestBase - RegistrationPositive starts with credentials: login john__2249@gmail.com and password123Ertg!
+18:37:36 INFO  manager.TestNgListener - Test registrationPositive successful 
