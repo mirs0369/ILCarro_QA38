@@ -7,18 +7,20 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 public class TestNgListener implements ITestListener {
+
     Logger logger = LoggerFactory.getLogger(TestNgListener.class);
 
     @Override
     public void onTestStart(ITestResult result) {
         ITestListener.super.onTestStart(result);
-        logger.info("Test " + result.getName() + " invoked ");
+        logger.info("Test " + result.getName() + " invoked");
+
     }
 
     @Override
     public void onTestSuccess(ITestResult result) {
         ITestListener.super.onTestSuccess(result);
-        logger.info("Test " + result.getName() + " successful ");
+        logger.info("Test " + result.getName() + " successful");
     }
 
     @Override

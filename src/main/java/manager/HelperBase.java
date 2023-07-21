@@ -20,7 +20,7 @@ public class HelperBase {
 
     public void type(By locator, String text){
         WebElement element = wd.findElement(locator);
-        //element.click();
+//        element.click();
         element.clear();
         element.sendKeys(text);
     }
@@ -36,22 +36,16 @@ public class HelperBase {
     public boolean isElementPresent(By locator){
         return wd.findElements(locator).size() > 0;
     }
-    public void takeScreenshot(String link) {
-        File tmp = ((TakesScreenshot) wd).getScreenshotAs(OutputType.FILE);
+
+    public void takeScreenshot(String link){
+        File tmp = ((TakesScreenshot)wd).getScreenshotAs(OutputType.FILE);
         File screenshot = new File(link);
-        try
-        {
+
+        try {
             Files.copy(tmp, screenshot);
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 
 }
-
-
-
-
-

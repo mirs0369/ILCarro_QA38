@@ -1,0 +1,19 @@
+10:05:58 INFO  manager.WebDriverListener - Start searching Element ------> By.id: city
+10:05:58 INFO  manager.WebDriverListener - Element with locator------> By.id: city was found 
+10:05:59 INFO  manager.WebDriverListener - Start searching Element ------> By.cssSelector: div.pac-item
+10:05:59 INFO  manager.WebDriverListener - Element with locator------> By.cssSelector: div.pac-item was found 
+10:05:59 INFO  manager.WebDriverListener - Start searching Element ------> By.id: dates
+10:05:59 INFO  manager.WebDriverListener - Element with locator------> By.id: dates was found 
+10:06:00 INFO  manager.WebDriverListener - Start searching Element ------> By.xpath: div[].=' 14 ']
+10:06:00 INFO  manager.WebDriverListener - Something went wrong... 
+10:06:00 INFO  manager.WebDriverListener - org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression div[].=' 14 '] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'div[].=' 14 ']' is not a valid XPath expression.
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MSI', ip: '172.20.10.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\tanyh\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60932}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b261a144d7622482aaf644e8899e9487
+*** Element info: {Using=xpath, value=div[].=' 14 ']}
+10:06:01 INFO  manager.WebDriverListener - This is a link to screenshot with error ---> src/test/screenshots/screen-360.png

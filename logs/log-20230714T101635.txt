@@ -1,0 +1,17 @@
+10:16:41 INFO  manager.WebDriverListener - Start searching Element ------> By.id: city
+10:16:41 INFO  manager.WebDriverListener - Element with locator------> By.id: city was found 
+10:16:41 INFO  manager.WebDriverListener - Start searching Element ------> By.cssSelector: div.pac-item
+10:16:41 INFO  manager.WebDriverListener - Element with locator------> By.cssSelector: div.pac-item was found 
+10:16:41 INFO  manager.WebDriverListener - Start searching Element ------> By.id: dates
+10:16:41 INFO  manager.WebDriverListener - Element with locator------> By.id: dates was found 
+10:16:46 INFO  manager.WebDriverListener - Start searching Element ------> By.xpath: //button[@type='submit']
+10:16:46 INFO  manager.WebDriverListener - Element with locator------> By.xpath: //button[@type='submit'] was found 
+10:16:47 INFO  manager.WebDriverListener - Something went wrong... 
+10:16:47 INFO  manager.WebDriverListener - org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-ueh-c106="" type="submit" disabled="">...</button> is not clickable at point (148, 481). Other element would receive the click: <div class="cdk-overlay-backdrop mat-overlay-transparent-backdrop cdk-overlay-backdrop-showing"></div>
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MSI', ip: '172.20.10.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\tanyh\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61294}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4047319084784c32413e832b0aefcbae
+10:16:47 INFO  manager.WebDriverListener - This is a link to screenshot with error ---> src/test/screenshots/screen-1007.png

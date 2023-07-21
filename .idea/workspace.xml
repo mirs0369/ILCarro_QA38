@@ -6,10 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="21d64189-7689-4594-acac-075413030a2d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/TestNgListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/TestNgListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/WebDriverListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/WebDriverListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AddNewCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AddNewCar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RegistrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegistrationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/logback.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,19 +55,23 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/tanyh/Documents/GitHub/ILCarro_QA38/src/test/java&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/tanyh/Documents/GitHub/ILCarro_QA38/src/test/resources&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tanyh\Documents\GitHub\ILCarro_QA38\src\test\resources" />
       <recent name="C:\Users\tanyh\Documents\GitHub\ILCarro_QA38\src\test\java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tanyh\Documents\GitHub\ILCarro_QA38\src\test\resources" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.RegistrationTests">
-    <configuration name="AddNewCar.addNewCarPositive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.LoginTests">
+    <configuration name="AddNewCar" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -69,9 +82,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":test" />
+            <option value=":tests" />
             <option value="--tests" />
-            <option value="&quot;AddNewCar.addNewCarPositive&quot;" />
+            <option value="&quot;AddNewCar&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -82,7 +95,7 @@
       <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="LoginTests.loginPositiveUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LoginTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -93,9 +106,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":test" />
+            <option value=":tests" />
             <option value="--tests" />
-            <option value="&quot;LoginTests.loginPositiveUser&quot;" />
+            <option value="&quot;LoginTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -106,7 +119,7 @@
       <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="RegistrationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LoginTests.loginPositive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -119,7 +132,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;RegistrationTests&quot;" />
+            <option value="&quot;LoginTests.loginPositive&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -130,7 +143,7 @@
       <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="RegistrationTests.registrationNegativePassword" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LoginTests.loginPositiveProps" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -143,7 +156,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;RegistrationTests.registrationNegativePassword&quot;" />
+            <option value="&quot;LoginTests.loginPositiveProps&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -154,7 +167,7 @@
       <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="RegistrationTests.registrationPositive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LoginTests.loginPositiveUserData" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -167,7 +180,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;RegistrationTests.registrationPositive&quot;" />
+            <option value="&quot;LoginTests.loginPositiveUserData&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -180,11 +193,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.RegistrationTests" />
-        <item itemvalue="Gradle.RegistrationTests.registrationPositive" />
-        <item itemvalue="Gradle.LoginTests.loginPositiveUser" />
-        <item itemvalue="Gradle.AddNewCar.addNewCarPositive" />
-        <item itemvalue="Gradle.RegistrationTests.registrationNegativePassword" />
+        <item itemvalue="Gradle.LoginTests" />
+        <item itemvalue="Gradle.AddNewCar" />
+        <item itemvalue="Gradle.LoginTests.loginPositiveUserData" />
+        <item itemvalue="Gradle.LoginTests.loginPositive" />
+        <item itemvalue="Gradle.LoginTests.loginPositiveProps" />
       </list>
     </recent_temporary>
   </component>
@@ -198,5 +211,15 @@
       <updated>1686906853124</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.io.FileNotFoundException" package="java.io" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

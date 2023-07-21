@@ -1,0 +1,10 @@
+19:31:21 INFO  manager.TestNgListener - Test addNewCarPositive invoked 
+19:31:21 INFO  manager.TestNgListener - Test loginPositive invoked 
+19:31:21 INFO  manager.TestNgListener - Test loginPositiveProps invoked 
+19:31:21 INFO  manager.TestNgListener - Test loginPositiveUser invoked 
+19:31:21 INFO  manager.TestNgListener - Test loginPositiveUserDTO invoked 
+19:31:21 INFO  manager.TestNgListener - Test loginPositiveUserDTO invoked 
+19:31:21 INFO  manager.TestNgListener - Test loginPositiveUserDTO invoked 
+19:31:21 INFO  manager.TestNgListener - Test registrationNegativePassword invoked 
+19:31:21 INFO  manager.TestNgListener - Test registrationPositive invoked 
+19:31:21 INFO  manager.TestNgListener - Test searchPositiveTest invoked 

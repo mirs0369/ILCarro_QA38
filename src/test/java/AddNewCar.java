@@ -10,7 +10,7 @@ public class AddNewCar extends TestBase{
 
         if(app.getUser().isLogged() == false)
             app.getUser().login(
-                    new User().withEmail("tanyha-333@mail.ru").withPassword("722Roksana!"));
+                    new User().withEmail("asd@fgh.com").withPassword("$Asdf1234"));
     }
 
     @Test
@@ -18,18 +18,19 @@ public class AddNewCar extends TestBase{
         int i = (int)(System.currentTimeMillis()/1000)%3600;
         Car car = Car.builder()
                 .location("Tel Aviv")
-                .make("Ford")
-                .model("Mustang")
+                .make("KIA")
+                .model("Sportage")
                 .year("2023")
                 .fuel("Petrol")
                 .seats("5")
                 .carClass("B")
                 .carRegNumber("100-200-" + i)
-                .price("500")
+                .price("150")
                 .about("")
                 .build();
-        app.getCar().openCarFOrm();
+        app.getCar().openCarForm();
         app.getCar().fillCarForm(car);
         app.getUser().submitLogin();
+
     }
 }

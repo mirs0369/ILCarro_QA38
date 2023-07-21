@@ -1,0 +1,1 @@
+15:16:09 INFO  manager.TestNgListener - Test loginPositiveUserData invoked 

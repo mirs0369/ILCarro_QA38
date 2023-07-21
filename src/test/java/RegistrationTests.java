@@ -1,59 +1,68 @@
-import manager.TestNgListener;
+import manager.ProviderData;
 import models.User;
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-@Listeners(TestNgListener.class)
+public class RegistrationTests extends TestBase {
 
-
-public class RegistrationTests extends TestBase{
     @BeforeMethod
     public void precondition(){
         if(app.getUser().isLogged()) app.getUser().logout();
     }
 
-
-
-
     @Test
-    public void registrationPositive() {
+    public void registrationPositive(){
         int i = (int)(System.currentTimeMillis()/1000)%3600;
         User user = new User()
                 .withName("John")
-                .withLastName("Brown")
-                .withEmail("john__" +i + "@gmail.com")
-                .withPassword("123Ertg!");
+                .withLastName("Snow")
+                .withEmail("john_" + i + "@mail.com")
+                .withPassword("$Asdf1234");
 
         app.getUser().openRegistrationForm();
-        logger.info("Open registration form invoked");
+        logger.info("openRegistrationForm invoked");
         app.getUser().fillRegistrationForm(user);
-        logger.info("Fill registration form invoked");
+        logger.info("fillRegistrationForm invoked");
         app.getUser().submitLogin();
-        logger.info("Submit Login invoked");
-        logger.info("RegistrationPositive starts with credentials: login " + user.getEmail()
-                + " and password" + user.getPassword());
+        logger.info("submitLogin invoked");
+        logger.info("registrationPositive starts with credentials: login "
+                + user.getEmail() + " & password: " + user.getPassword());
+        Assert.assertTrue(app.getUser().isLoggedSuccess());
+    }
+    @Test(dataProvider = "userDtoCSV", dataProviderClass = ProviderData.class)
+    public void registrationPositiveDTO(User user){
+//        int i = (int)(System.currentTimeMillis()/1000)%3600;
+//        User user = new User()
+//                .withName("John")
+//                .withLastName("Snow")
+//                .withEmail("john_" + i + "@mail.com")
+//                .withPassword("$Asdf1234");
 
-     Assert.assertTrue(app.getUser().isLoggedSuccess());
-
+        app.getUser().openRegistrationForm();
+        logger.info("openRegistrationForm invoked");
+        app.getUser().fillRegistrationForm(user);
+        logger.info("fillRegistrationForm invoked");
+        app.getUser().submitLogin();
+        logger.info("submitLogin invoked");
+        logger.info("registrationPositive starts with credentials: login "
+                + user.getEmail() + " & password: " + user.getPassword());
+        Assert.assertTrue(app.getUser().isLoggedSuccess());
     }
     @Test
-    public void registrationNegativePassword() {
+    public void registrationNegativeWrongPassword(){
         int i = (int)(System.currentTimeMillis()/1000)%3600;
         User user = new User()
                 .withName("John")
-                .withLastName("Brown")
-                .withEmail("john__" +i + "@gmail.com")
-                .withPassword("123Ertg");
+                .withLastName("Snow")
+                .withEmail("john_" + i + "@mail.com")
+                .withPassword("Asdf1234");
 
         app.getUser().openRegistrationForm();
         app.getUser().fillRegistrationForm(user);
         app.getUser().submitLogin();
-       // Assert.assertTrue(app.getUser().isLoggedSuccess());
-
+//        Assert.assertTrue(app.getUser().isLoggedSuccess());
     }
 
     @AfterMethod

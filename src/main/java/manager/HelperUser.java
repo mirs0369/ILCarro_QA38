@@ -17,6 +17,7 @@ public class HelperUser extends HelperBase{
     public void openLoginForm(){
         wd.findElement(By.xpath("//*[.=' Log in ']")).click();
     }
+
     public void openRegistrationForm(){
         wd.findElement(By.xpath("//*[.=' Sign up ']")).click();
     }
@@ -36,37 +37,34 @@ public class HelperUser extends HelperBase{
         type(By.xpath("//input[@id='password']"), user.getPassword());
     }
 
-
     public void fillRegistrationForm(User user){
         type(By.xpath("//input[@id='name']"), user.getName());
         type(By.xpath("//input[@id='lastName']"), user.getLastName());
         type(By.xpath("//input[@id='email']"), user.getEmail());
         type(By.xpath("//input[@id='password']"), user.getPassword());
-      clickCheckbox();
-
-
+        clickCheckbox();
     }
 
     public void clickCheckbox(){
-        System.out.println("click checkbox");
-       //var 1
-       // click(By.cssSelector("label[for='terms-of-use'"));
-        //var 2
-       // JavascriptExecutor js = (JavascriptExecutor) wd;
-       // js.executeScript("document.querySelector('#terms-of-use').click()");
-        //var 3
-        Rectangle rect = wd.findElement(By.cssSelector("div.checkbox-container")).getRect();
-        int x = rect.getX() + 5;
-        int y = rect.getY() + rect.getHeight() / 4;
-        Actions actions = new Actions(wd);
-        actions.moveByOffset(x, y).click().perform();
+        System.out.println("clicked Checkbox");
+        // variant 1
+//            click(By.cssSelector("label[for='terms-of-use']"));
+        // variant 2
+        JavascriptExecutor js = (JavascriptExecutor) wd;
+        js.executeScript("document.querySelector('#terms-of-use').click();");
+        // variant 3
+//        Rectangle rect = wd.findElement(By.cssSelector("div.checkbox-container")).getRect();
+//        int x = rect.getX() + 5;
+//        int y = rect.getY() + rect.getHeight() / 4;
+//        Actions actions = new Actions(wd);
+//        actions.moveByOffset(x, y).click().perform();
 
     }
 
     // method signature - type + name + parameters types
     public void submitLogin(){
 
-        //wd.findElement(By.xpath("//button[@type='submit']")).submit();
+//        wd.findElement(By.xpath("//button[@type='submit']")).submit();
         wd.findElement(By.xpath("//button[@type='submit']")).click();
     }
 

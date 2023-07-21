@@ -6,11 +6,8 @@ import lombok.Setter;
 import lombok.ToString;
 
 @Setter
-
 @Getter
-
 @Builder
-
 @ToString
 
 public class Car {
@@ -25,8 +22,5 @@ public class Car {
     String carRegNumber;
     String price;
     String about;
-
-
-
 
 }

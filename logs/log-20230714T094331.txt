@@ -1,0 +1,10 @@
+09:43:36 INFO  manager.WebDriverListener - Start searching Element ------> By.id: city
+09:43:36 INFO  manager.WebDriverListener - Element with locator------> By.id: city was found 
+09:43:36 INFO  manager.WebDriverListener - Start searching Element ------> By.cssSelector: div.pac-item
+09:43:37 INFO  manager.WebDriverListener - Element with locator------> By.cssSelector: div.pac-item was found 
+09:43:37 INFO  manager.WebDriverListener - Start searching Element ------> By.id: dates
+09:43:37 INFO  manager.WebDriverListener - Element with locator------> By.id: dates was found 
+09:43:37 INFO  manager.WebDriverListener - Start searching Element ------> By.id: city
+09:43:37 INFO  manager.WebDriverListener - Element with locator------> By.id: city was found 
+09:43:43 INFO  manager.WebDriverListener - Start searching Element ------> By.xpath: //button[@type='submit']
+09:43:43 INFO  manager.WebDriverListener - Element with locator------> By.xpath: //button[@type='submit'] was found 
